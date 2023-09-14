@@ -10,6 +10,7 @@ public class CountFromTo {
 
         System.out.print("Please enter the second number: ");
         int to = be.nextInt();
+        be.close();
 
         for(int i = from; i < to; i++)
         {

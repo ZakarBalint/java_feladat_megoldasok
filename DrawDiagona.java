@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
-public class DrawSquare {
+public class DrawDiagona {
     public static void main(String[] args) {
         System.out.print("Please enter the square size: ");
 
         Scanner be = new Scanner(System.in);
-        
 
         int size = be.nextInt();
         be.close();
@@ -14,7 +13,7 @@ public class DrawSquare {
         {
             for(int y = 0; y < size; y++)
             {
-                if(y == 0 || i == 0 || y == size - 1 || i == size - 1)
+                if(y == 0 || i == 0 || y == size - 1 || i == size - 1 || y == i)
                 {
                     System.out.print('%');
                 }

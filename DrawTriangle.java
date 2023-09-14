@@ -8,6 +8,7 @@ public class DrawTriangle {
         System.out.print("Please enter the triangle height:");
 
         int height = be.nextInt();
+        be.close();
 
         for(int i = 1; i <= height; i++)
         {

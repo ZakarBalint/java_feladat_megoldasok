@@ -6,6 +6,7 @@ public class AverageOfInput
     {
         Scanner be = new Scanner(System.in);
 
+
         int sum = 0;
         double avg = 0;
 
@@ -14,6 +15,7 @@ public class AverageOfInput
             System.out.print("Please enter a number: ");
             sum += be.nextInt();
         }
+        be.close();
 
         avg = Double.valueOf(sum / 5);
 
