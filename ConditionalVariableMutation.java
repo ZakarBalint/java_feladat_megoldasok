@@ -73,5 +73,7 @@ public class ConditionalVariableMutation {
             System.out.println("Run Forest Run!");
         }
 
+        be.close();
+
     }
 }
