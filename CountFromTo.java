@@ -12,9 +12,16 @@ public class CountFromTo {
         int to = be.nextInt();
         be.close();
 
-        for(int i = from; i < to; i++)
+        if(to > from)
         {
-            System.out.println(i);
+            for(int i = from; i < to; i++)
+            {
+                System.out.println(i);
+            }
+        }
+        else
+        {
+            System.out.println("The second number should be bigger");
         }
     }    
 }
