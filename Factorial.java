@@ -30,7 +30,7 @@ public class Factorial
 
     public static void main(String[] args) {
         
-        System.out.println("Adjon meg egy számot: ");
+        System.out.println("Adjon meg egy pozitív egész számot: ");
         Scanner be = new Scanner(System.in);
 
         int szam = be.nextInt();
