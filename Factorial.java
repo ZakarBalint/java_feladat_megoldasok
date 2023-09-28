@@ -35,6 +35,8 @@ public class Factorial
 
         int szam = be.nextInt();
 
+        be.close();
+
         factorial_ciklus(szam);
 
         int ki = factorial_rekurziv(szam);
