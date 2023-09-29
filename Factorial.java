@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Factorial
 {
-    static void factorial_ciklus(int szam)
+    static int factorial_ciklus(int szam)
     {
         int factorial = 1;
 
@@ -11,7 +11,7 @@ public class Factorial
             factorial = factorial * i;
         }
 
-        System.out.println(szam + " factoriálisa (ciklus): " + factorial);
+        return factorial;
     }
 
     static int factorial_rekurziv(int szam)
@@ -24,8 +24,6 @@ public class Factorial
         {
             return 1;
         }
-
-
     }
 
     public static void main(String[] args) {
@@ -37,11 +35,9 @@ public class Factorial
 
         be.close();
 
-        factorial_ciklus(szam);
+        System.out.println(szam + " factoriálisa (ciklus): " + factorial_ciklus(szam));
 
-        int ki = factorial_rekurziv(szam);
-
-        System.out.println(szam + " factoriálisa (rekurzív): " + ki);
+        System.out.println(szam + " factoriálisa (rekurzív): " + factorial_rekurziv(szam));
 
     }
 }
