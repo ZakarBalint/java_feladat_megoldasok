@@ -2,11 +2,18 @@ import java.util.Scanner;
 
 public class SumDigits {
 
-    public static int sumdigits_ciklus(int szam)
+    public static int sumdigits(int szam)
     {
-        string s_szam = s
+        int sum = szam % 10;
 
-        return 0;
+        if(szam == 0)
+        {
+            return 0;
+        }
+        else
+        {
+            return sum + sumdigits(szam / 10);
+        }
     }
 
     public static void main(String[] args) {
@@ -17,6 +24,6 @@ public class SumDigits {
 
         be.close();
 
-
+        System.out.println("A számjegyek összege: " + sumdigits(szam));
     }
 }
