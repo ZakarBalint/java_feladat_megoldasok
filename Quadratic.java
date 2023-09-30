@@ -3,23 +3,26 @@ import java.util.Scanner;
 
 public class Quadratic {
 
-    public static int quadratic(int a, int b, int c)
+    public static double quadratic(int a, int b, int c)
     {
         double d = (b*b)-(4*a*c);
-        double e = b/2*a;
 
-        if(d > 0)
+        if(d > 0.0)
         {
-            double x1 = e + (Math.sqrt(d) / 2 * a);
-            double x2 = e - (Math.sqrt(d) / 2 * a);
+            double x1 = (-b + (Math.sqrt(d) / 2.0 * a));
+            double x2 = (-b - (Math.sqrt(d) / 2.0 * a));
 
+            return x1, x2;
         }
-        else if(d == 0)
+        else if(d == 0.0)
         {
-            
+            double x1 = -b / (2.0 * a);
+            return x1;
         }
-
-        return 0;
+        else if(d < 0.0)
+        {
+            return -1.0;
+        }
     }
 
     public static void main(String[] args) {
@@ -27,13 +30,13 @@ public class Quadratic {
         Scanner be = new Scanner(System.in);
         
         System.out.print("a: ");
-        int a = be.nextInt();
+        double a = be.nextDouble();
         
         System.out.print("b: ");
-        int b = be.nextInt();
+        int b = be.nextDouble();
         
         System.out.print("c: ");
-        int c = be.nextInt();
+        int c = be.nextDouble();
 
         be.close();
 
