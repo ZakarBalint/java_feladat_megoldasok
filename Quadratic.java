@@ -1,28 +1,28 @@
-import java.net.SecureCacheResponse;
 import java.util.Scanner;
 
 public class Quadratic {
 
-    public static double quadratic(int a, int b, int c)
+    public static String quadratic(double a, double b, double c)
     {
-        double d = (b*b)-(4*a*c);
+        double d = b * b - 4.0 * a * c;
 
         if(d > 0.0)
         {
-            double x1 = (-b + (Math.sqrt(d) / 2.0 * a));
-            double x2 = (-b - (Math.sqrt(d) / 2.0 * a));
+            double x1 = (-b + Math.sqrt(d)) / (2.0 * a);
+            double x2 = (-b - Math.sqrt(d)) / (2.0 * a);
 
-            return x1, x2;
+            return "2 zérushelye van melyek: x1 = " + x1 + " x2 = " + x2;
         }
         else if(d == 0.0)
         {
-            double x1 = -b / (2.0 * a);
-            return x1;
+            double x = -b / (2.0 * a);
+            return "1 zérushelye van mely: x = " + x;
         }
         else if(d < 0.0)
         {
-            return -1.0;
+            return "Nincs megoldása";
         }
+        return "";
     }
 
     public static void main(String[] args) {
@@ -33,16 +33,16 @@ public class Quadratic {
         double a = be.nextDouble();
         
         System.out.print("b: ");
-        int b = be.nextDouble();
+        double b = be.nextDouble();
         
         System.out.print("c: ");
-        int c = be.nextDouble();
+        double c = be.nextDouble();
 
         be.close();
 
         if(a != 0)
         {
-
+            System.out.println("Az egyneletnek " + quadratic(a, b, c));
         }
         else
         {

@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 public class Fibonacci {
 
-    static int fibonacci_ciklus(int[] tomb, int n)
+    static int fibonacci_ciklus(int n)
     {
         
 
@@ -9,8 +11,9 @@ public class Fibonacci {
 
     public static void main(String[] args) {
             
-        int[] tomb = {0, 1};
+        Scanner be = new Scanner(System.in);
 
+        System.out.println("Adja meg a ");
         
 
     }       
