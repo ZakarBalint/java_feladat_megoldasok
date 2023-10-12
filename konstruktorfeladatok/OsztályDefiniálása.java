@@ -1,3 +1,5 @@
+package konstruktorfeladatok;
+
 class Person
 {
     String firstname;

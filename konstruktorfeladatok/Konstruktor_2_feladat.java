@@ -1,3 +1,5 @@
+package konstruktorfeladatok;
+
 class Date
 {
     int year;
@@ -6,7 +8,7 @@ class Date
 
     public Date(int y, int m, int d)
     {
-        if(isCorrectDate(year, month, day))
+        if(isCorrectDate(y, m, d))
         {
             year = y;
             month = m;
@@ -95,13 +97,14 @@ class Date
 
 public class Konstruktor_2_feladat {
     public static void main(String[] args) {
-        Date a = new Date(310, 12, 23);
-        Date b = new Date(3000, 31, -1);
-        Date c = new Date(200, 3);
-
+        Date a = new Date(1310, 10, 23);
         a.printDate();
+        
+        Date b = new Date(3000, 31, -1);
         b.printDate();
-        c.printDate();
 
+        Date c = new Date(1750, 6);
+        c.printDate();
+        
     }
 }
