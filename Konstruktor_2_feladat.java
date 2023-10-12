@@ -1,4 +1,3 @@
-
 class Date
 {
     int year;
