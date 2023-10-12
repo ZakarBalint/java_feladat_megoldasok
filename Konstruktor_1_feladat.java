@@ -68,5 +68,8 @@ public class Konstruktor_1_feladat {
         p1.set_birthDay(9);
 
         p1.printPerson();
+
+        p2.set_lastname("asd");
+        p2.printPerson();
     }
 }

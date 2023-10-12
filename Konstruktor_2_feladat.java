@@ -15,9 +15,7 @@ class Date
         else
         {
             System.out.println("Hibás adat!");
-        }
-
-        
+        }      
     }
 
     public Date(int y, int m)
@@ -99,7 +97,7 @@ public class Konstruktor_2_feladat {
     public static void main(String[] args) {
         Date a = new Date(310, 12, 23);
         Date b = new Date(3000, 31, -1);
-        Date c = new Date(901, 3);
+        Date c = new Date(200, 3);
 
         a.printDate();
         b.printDate();
