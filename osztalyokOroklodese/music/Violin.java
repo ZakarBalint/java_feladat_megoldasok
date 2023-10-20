@@ -1,4 +1,4 @@
-package osztalyokOroklodese.music;
+package osztalyokOroklodese.Music;
 
 public class Violin extends StringedInstrument{
     public Violin(int _strings, String _sound)

@@ -1,4 +1,4 @@
-package osztalyokOroklodese.music;
+package osztalyokOroklodese.Music;
 
 public abstract class StringedInstrument extends Instrument {
 
