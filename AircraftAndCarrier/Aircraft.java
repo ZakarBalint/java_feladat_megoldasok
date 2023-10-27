@@ -1,7 +1,7 @@
-package osztalypeldanyositas;
+package AircraftAndCarrier;
 
-class Aircraft
-{
+public class Aircraft {
+    
     String type;
     int maxAmmo;
     int baseDamage;
@@ -21,6 +21,11 @@ class Aircraft
         }
 
         ammo = amount - ammo;
+    }
+
+    public int get_damage()
+    {
+        return this.ammo * this.baseDamage;
     }
 
     public String getType()
@@ -46,10 +51,5 @@ class Aircraft
 
         return false;
     }
-}
-
-public class Aircrafts {
-    public static void main(String[] args) {
-        
-    }    
+    
 }
