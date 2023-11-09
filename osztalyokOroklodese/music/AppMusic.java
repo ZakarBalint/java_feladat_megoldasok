@@ -1,4 +1,4 @@
-package osztalyokOroklodese.music;
+package osztalyokOroklodese.Music;
 
 public class AppMusic {
     public static void main(String[] args) {
