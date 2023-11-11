@@ -1,12 +1,11 @@
 package Campus;
 
-import java.util.Collections;
-import java.util.List;
+import java.util.ArrayList;
 
 public class Cohort {
     public String Name;
-    public List<Student> Students;
-    public List<Mentor> Mentors;
+    public ArrayList<Student> Students;
+    public ArrayList<Mentor> Mentors;
 
     public void addStudent(Student _student)
     {
@@ -20,13 +19,13 @@ public class Cohort {
 
     public void info()
     {
-        System.out.println("The " + this.Name + "cohort has" +   this.Students.size() + " students and " + this.Mentors.size() + " mentors.");
+        System.out.println("The " + this.Name + " cohort has " +   this.Students.size() + " students and " + this.Mentors.size() + " mentors.");
     }
 
     public Cohort(String _name)
     {
         Name = _name;
-        Students = Collections.emptyList();
-        Mentors = Collections.emptyList();
+        Students = new ArrayList<>();
+        Mentors = new ArrayList<>();
     }
 }

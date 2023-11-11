@@ -2,35 +2,54 @@ package Campus;
 
 public class Campus {
     public static void main(String[] args) {
+
+        Person P1 = new Person("Mark", 46, "male"){};
+        P1.Introduce();
+        P1.getGoal();
+
+        Person P2 = new Person() {};
+        P2.Introduce();
+        P2.getGoal();
+
+        Student St1 = new Student("John Doe", 20, "male", "BME");
+        St1.Introduce();
+        St1.getGoal();
+
+        Student St2 = new Student();
+        St2.Introduce();
+        St2.getGoal();
+
+        Mentor M1 = new Mentor("Gandhi", 148, "male", "senior mentor");
+        M1.Introduce();
+        M1.getGoal();
+
+        Mentor M2 = new Mentor();
+        M2.Introduce();
+        M2.getGoal();
+
+        Sponsor Sp1 = new Sponsor();
+        Sp1.hire();
+        Sp1.hire();
+        Sp1.hire();
+        Sp1.Introduce();
+        Sp1.getGoal();
+
+        Sponsor Sp2 = new Sponsor("Elon Musk", 46, "male", "SpaceX");
+        Sp2.hire();
+        Sp2.hire();
+        Sp2.hire();
+        Sp2.hire();
+        Sp2.hire();
+        Sp2.Introduce();
+        Sp2.getGoal();
+
+        Cohort C1 = new Cohort("AWESOME");
         
-        /*
-            Hi, I'm Mark, a 46 year old male.
-            My goal is: Live for the moment.
-
-            Hi, I'm Jane Doe, a 30 year old female.
-            My goal is: Live for the moment.
-
-            Hi, I'm John Doe, a 20 year old male from BME who skipped 0 days from the course already.
-            My goal is: Be a junior software developer.
-
-            Hi, I'm Jane Doe, a 30 year old female from The School of Life who skipped 3 days from the course already.
-            My goal is: Be a junior software developer.
-
-            Hi, I'm Gandhi, a 148 year old male senior mentor.
-            My goal is: Educate brilliant junior software developers.
-
-            Hi, I'm Jane Doe, a 30 year old female intermediate mentor.
-            My goal is: Educate brilliant junior software developers.
-
-            Hi, I'm Jane Doe, a 30 year old female who represents Google and hired 3 students so far.
-            My goal is: Hire brilliant junior software developers.
-
-            Hi, I'm Elon Musk, a 46 year old male who represents SpaceX and hired 5 students so far.
-            My goal is: Hire brilliant junior software developers.
-
-            The AWESOME cohort has 2 students and 2 mentors.
-        */
-
+        C1.addMentor(M1);
+        C1.addMentor(M2);
+        C1.addStudent(St1);
+        C1.addStudent(St2);
         
+        C1.info();
     }
 }
